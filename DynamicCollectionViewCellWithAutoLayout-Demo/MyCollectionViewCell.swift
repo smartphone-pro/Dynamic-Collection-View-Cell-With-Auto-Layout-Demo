@@ -25,7 +25,7 @@ class MyCollectionViewCell: UICollectionViewCell {
         // Initialization code
         if isIOS7 {
             // Need set autoresizingMask to let contentView always occupy this view's bounds, key for iOS7
-            self.contentView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+            self.contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         }
         self.layer.masksToBounds = true
     }
@@ -37,7 +37,7 @@ class MyCollectionViewCell: UICollectionViewCell {
         contentLabel.preferredMaxLayoutWidth = self.bounds.width - 2 * kLabelHorizontalInsets
     }
     
-    func configCell(title: String, content: String, titleFont: String, contentFont: String) {
+    func configCell(_ title: String, content: String, titleFont: String, contentFont: String) {
         titleLabel.text = title
         contentLabel.text = content
         
